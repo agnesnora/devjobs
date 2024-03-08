@@ -1,12 +1,16 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+ü;
+import { JobsData, jobs } from "../data";
+import { Search } from "./components/Search";
 import "./App.css";
 
 const App = () => {
+  const [filteredJobs, setFilteredJobs] = useState<JobsData>([]);
+  console.log(jobs);
   return (
     <>
       <div>Cili</div>
+      <Search jobs={jobs} />
     </>
   );
 };

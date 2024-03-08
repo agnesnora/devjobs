@@ -547,3 +547,4 @@ const jobs: JobsData[] = [
     },
   },
 ];
+export { jobs };
