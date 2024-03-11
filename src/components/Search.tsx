@@ -31,7 +31,12 @@ export const Search: FC<SearchProps> = ({
 
   const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const filteredData = filterJobs(locationQuery, positionQuery, jobs);
+    const filteredData = filterJobs(
+      locationQuery,
+      positionQuery,
+      fullTime,
+      jobs
+    );
     setFilteredJobs(filteredData);
     console.log(filteredJobs);
   };

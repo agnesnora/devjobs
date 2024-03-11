@@ -8,7 +8,7 @@ const mockJobs = [
     logoBackground: "hsl(22, 89%, 52%)",
     position: " Senior Technical Lead Engineer",
     postedAt: "1mo ago",
-    contract: "Part Time",
+    contract: "Full Time",
     location: "MockCity",
     website: "https://example.com/typemaster",
     apply: "https://example.com/typemaster/apply",
@@ -78,7 +78,7 @@ const mockJobs = [
     logoBackground: "hsl(29, 60%, 87%)",
     position: "Junior Full-Stack Developer",
     postedAt: "1mo ago",
-    contract: "Full Time",
+    contract: "Part Time",
     location: "United Kingdom",
     website: "https://example.com/coffeeroasters",
     apply: "https://example.com/coffeeroasters/apply",
@@ -112,7 +112,7 @@ const mockJobs = [
 
 describe("test suite 1", () => {
   test("filter jobs by location and position ", () => {
-    const filteredJobs = filterJobs("MockCity", "Senior", mockJobs);
+    const filteredJobs = filterJobs("MockCity", "Senior", true, mockJobs);
     expect(filteredJobs).toEqual([
       {
         id: 12,
@@ -121,7 +121,7 @@ describe("test suite 1", () => {
         logoBackground: "hsl(22, 89%, 52%)",
         position: " Senior Technical Lead Engineer",
         postedAt: "1mo ago",
-        contract: "Part Time",
+        contract: "Full Time",
         location: "MockCity",
         website: "https://example.com/typemaster",
         apply: "https://example.com/typemaster/apply",
@@ -153,18 +153,23 @@ describe("test suite 1", () => {
   });
 
   test("Filter jobs with no match", () => {
-    const filteredJobs = filterJobs("NonExistentCity", "Junior", mockJobs);
+    const filteredJobs = filterJobs(
+      "NonExistentCity",
+      "Junior",
+      true,
+      mockJobs
+    );
 
     expect(filteredJobs).toEqual([]);
   });
 
   test("Filter jobs with empty location and position", () => {
-    const filteredJobs = filterJobs("", "", mockJobs);
+    const filteredJobs = filterJobs("", "", false, mockJobs);
 
     expect(filteredJobs).toEqual(mockJobs);
   });
   test("Filter jobs with location and without position", () => {
-    const filteredJobs = filterJobs("United Kingdom", "", mockJobs);
+    const filteredJobs = filterJobs("United Kingdom", "", false, mockJobs);
 
     expect(filteredJobs).toEqual([
       {
@@ -209,7 +214,7 @@ describe("test suite 1", () => {
         logoBackground: "hsl(29, 60%, 87%)",
         position: "Junior Full-Stack Developer",
         postedAt: "1mo ago",
-        contract: "Full Time",
+        contract: "Part Time",
         location: "United Kingdom",
         website: "https://example.com/coffeeroasters",
         apply: "https://example.com/coffeeroasters/apply",
@@ -238,5 +243,9 @@ describe("test suite 1", () => {
         },
       },
     ]);
+  });
+  test("filter united kingdom with full time job and empty position", () => {
+    const filteredJobs = filterJobs("United Kingdom", "", true, mockJobs);
+    expect(filteredJobs).toContainEqual(mockJobs[1]);
   });
 });
