@@ -1,10 +1,11 @@
-import { FC, useState, ChangeEvent } from "react";
+import { FC, useState, ChangeEvent, FormEvent } from "react";
 import { JobsData } from "../../data";
+import { filterJobs } from "../utils";
 
 interface SearchProps {
-  jobs: JobsData;
-  filteredJobs: JobsData;
-  setFilteredJobs: () => void;
+  jobs: JobsData[];
+  filteredJobs: JobsData[];
+  setFilteredJobs: React.Dispatch<React.SetStateAction<JobsData[]>>;
 }
 
 export const Search: FC<SearchProps> = ({
@@ -12,25 +13,32 @@ export const Search: FC<SearchProps> = ({
   filteredJobs,
   setFilteredJobs,
 }) => {
-  const [titleQuery, setTitleQuery] = useState<string>("");
+  const [positionQuery, setPositionQuery] = useState<string>("");
   const [locationQuery, setLocationQuery] = useState<string>("");
   const [fullTime, setFullTime] = useState<boolean>(false);
 
   const handleTitleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setTitleQuery(event.target.value);
+    setPositionQuery(event.target.value);
   };
 
   const handleLocationChange = (event: ChangeEvent<HTMLInputElement>) => {
     setLocationQuery(event.target.value);
   };
 
-  const handleFullTimeChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setFullTime(event.target.checked);
+  const handleFullTimeChange = () => {
+    setFullTime(!fullTime);
   };
-  // const filterJobs =
+
+  const handleSearch = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const filteredData = filterJobs(locationQuery, positionQuery, jobs);
+    setFilteredJobs(filteredData);
+    console.log(filteredJobs);
+  };
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleSearch}>
         <input
           type="text"
           className="input--title"
@@ -51,6 +59,7 @@ export const Search: FC<SearchProps> = ({
           />
           Full Time
         </label>
+        <button type="submit">Search</button>
       </form>
     </div>
   );
