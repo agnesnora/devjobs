@@ -2,9 +2,14 @@
   box-sizing: border-box;
 }
 
-#root {
+#root,
+body {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+.dark {
+  background-color: #121721;
 }/*# sourceMappingURL=App.css.map */
