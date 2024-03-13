@@ -15,13 +15,14 @@ export const JobCard: FC<JobCardProps> = ({ filteredJobs }) => {
       {filteredJobs.map((job) => (
         <div
           key={job.id}
-          className={`jobcard--container--${
+          className={`jobcard--container jobcard--container--${
             themeContext?.theme === "light" ? "light" : "dark"
           }`}
         >
           <div>Logo</div>
           <div className="card--header">
             <p>{job.postedAt}</p>
+            <p>.</p>
             <p>{job.contract}</p>
           </div>
           <div className="card--main">

@@ -1,6 +1,26 @@
+.jobcard--container {
+  text-align: left;
+}
+.jobcard--container .card--header {
+  display: flex;
+  align-items: end;
+}
+.jobcard--container .card--header p {
+  margin-right: 0.5em;
+  font-size: 1.2rem;
+}
+.jobcard--container .card--header p:nth-child(2) {
+  font-weight: bold;
+}
 .jobcard--container--dark {
   background-color: #19202d;
   color: #fff;
   padding: 2em;
   margin: 1em;
+}
+.jobcard--container--dark p {
+  color: #6e8098;
+}
+.jobcard--container--dark h1 {
+  color: #fff;
 }/*# sourceMappingURL=JobCard.css.map */
