@@ -2,33 +2,48 @@
 
 .jobcard--container {
   text-align: left;
+  margin: 2.5em 1em;
+  padding: 1em;
+  border-radius: 6px;
   .company--logo {
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 12px;
+
+    position: relative;
+    top: -40px;
   }
   .card--header {
     display: flex;
-    align-items: end;
+    // align-items: end;
     p {
-      margin-right: 0.5em;
-      font-size: 1.2rem;
-      &:nth-child(2) {
-        font-weight: bold;
-      }
+      // margin-right: 0.5em;
+      // margin-top: 0;
+      margin: 0 0.5em 0 0;
+    }
+    span {
+      font-weight: bold;
+      color: $darkGrey;
+      font-size: 1.1rem;
+      margin-right: 0.4em;
     }
   }
   .card--main {
+    h1 {
+      font-size: 1.25rem;
+    }
+    h4 {
+      color: $violet;
+    }
   }
 }
 
 .jobcard--container--dark {
   background-color: $veryDarkBlue;
   color: $pureWhite;
-  padding: 2em;
-  margin: 1em;
+
   p {
     color: $darkGrey;
   }

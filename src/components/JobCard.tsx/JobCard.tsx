@@ -29,7 +29,7 @@ export const JobCard: FC<JobCardProps> = ({ filteredJobs }) => {
           ></div>
           <div className="card--header">
             <p>{job.postedAt}</p>
-            <p>.</p>
+            <span>.</span>
             <p>{job.contract}</p>
           </div>
           <div className="card--main">
