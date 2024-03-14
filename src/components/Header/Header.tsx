@@ -1,5 +1,6 @@
 import { FC, useContext } from "react";
 import { ThemeContext } from "../../App";
+import "./Header.style.css";
 
 export const Header: FC = () => {
   const themeContext = useContext(ThemeContext);

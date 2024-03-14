@@ -1,0 +1,15 @@
+header {
+  background-image: url("/assets/mobile/bg-pattern-header.svg");
+  background-repeat: no-repeat;
+  height: 136px;
+
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  img {
+    width: 115px;
+    height: 32px;
+  }
+}

@@ -1,7 +1,7 @@
 import { FC, useContext } from "react";
 import { JobsData } from "../../../data";
 import { ThemeContext } from "../../App";
-import "./JobCard.css";
+import "./JobCard.style.css";
 
 interface JobCardProps {
   filteredJobs: JobsData[];

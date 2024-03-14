@@ -1,0 +1,32 @@
+.form--container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  margin: 1.5em;
+  position: relative;
+  top: -55px;
+  border-radius: 12px;
+}
+.form--container input {
+  border: none;
+  height: 80px;
+  color: #6e8098;
+  background-color: transparent;
+  border-right: 1px #6e8098 solid;
+}
+
+.form--container--light {
+  background-color: #ffffff;
+}
+
+.form--container--dark {
+  background-color: #19202d;
+}
+
+::-moz-placeholder {
+  color: #6e8098;
+}
+
+::placeholder {
+  color: #6e8098;
+}/*# sourceMappingURL=Search.style.css.map */

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { JobsData } from "../../../data";
 import { JobCard } from "../JobCard.tsx/JobCard";
+import "./JobList.style.css";
 // import { ThemeContext } from "../../App";
 
 interface JobListProps {

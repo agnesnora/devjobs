@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+.form--container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  margin: 1.5em;
+  position: relative;
+  top: -55px;
+  border-radius: 12px;
+  input {
+    border: none;
+    height: 80px;
+    color: $darkGrey;
+    background-color: transparent;
+    border-right: 1px $darkGrey solid;
+  }
+}
+.form--container--light {
+  background-color: $pureWhite;
+}
+.form--container--dark {
+  background-color: $veryDarkBlue;
+}
+
+::placeholder {
+  color: $darkGrey;
+}

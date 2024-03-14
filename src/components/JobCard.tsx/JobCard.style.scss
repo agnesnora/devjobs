@@ -51,3 +51,13 @@
     color: $pureWhite;
   }
 }
+.jobcard--container--light {
+  background-color: $pureWhite;
+
+  p {
+    color: $darkGrey;
+  }
+  h1 {
+    color: $midnight;
+  }
+}
