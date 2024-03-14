@@ -1,0 +1,34 @@
+// COLORS
+
+$violet: #5960e0;
+$lightViolet: #939bf4;
+$veryDarkBlue: #19202d;
+$midnight: #121721;
+$pureWhite: #ffffff;
+$almostWhite: #f8f8f8;
+$lightGrey: #121721;
+$grey: #9daec2;
+$darkGrey: #6e8098;
+$button2Bg: #eeeffc;
+$button2Hover: #c5c9f4;
+$jupiterColor: #d83a34;
+$saturnColor: #cd5120;
+$uranusColor: #1ec1a2;
+$neptuneColor: #2d68f0;
+
+//TYPOGRAPHY
+
+$font: "Kumbh Sans", sans-serif;
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+// <thin stroke>: Use a value from 40 to 300
+
+// .kumbh-sans-<uniquifier> {
+//     font-family: "Kumbh Sans", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//     font-variation-settings:
+//       "YOPQ" <thin stroke>;
+//   }

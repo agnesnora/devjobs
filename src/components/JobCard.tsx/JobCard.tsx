@@ -19,7 +19,14 @@ export const JobCard: FC<JobCardProps> = ({ filteredJobs }) => {
             themeContext?.theme === "light" ? "light" : "dark"
           }`}
         >
-          <div>Logo</div>
+          {/* <img src={job.logo} className="company--logo" /> */}
+          <div
+            className="company--logo"
+            style={{
+              backgroundImage: `url(${job.logo})`,
+              backgroundColor: job.logoBackground,
+            }}
+          ></div>
           <div className="card--header">
             <p>{job.postedAt}</p>
             <p>.</p>
