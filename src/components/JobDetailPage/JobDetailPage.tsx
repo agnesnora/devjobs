@@ -1,7 +1,8 @@
 import { FC } from "react";
 import { useParams } from "react-router-dom";
 import { JobsData } from "../../../data";
-import { CompanyCard } from "../CompanyCard";
+import { CompanyCard } from "./CompanyCard";
+import { JobDescription } from "./JobDescription";
 
 interface RouteParams {
   id: string;
@@ -20,7 +21,7 @@ export const JobDetailPage: FC<JobDetailProps> = ({ filteredJobs }) => {
   return (
     <div className="job--detail--container">
       <CompanyCard filteredJob={filteredJob} />
-      <div>{filteredJob?.position}</div>
+      <JobDescription filteredJob={filteredJob} />
     </div>
   );
 };
