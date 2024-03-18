@@ -48,7 +48,10 @@ const App: FC = () => {
                 path="/"
                 element={<JobList filteredJobs={filteredJobs} />}
               ></Route>{" "}
-              <Route path="/jobs/:id" element={<JobDetailPage />}></Route>
+              <Route
+                path="/jobs/:id"
+                element={<JobDetailPage filteredJobs={filteredJobs} />}
+              ></Route>
             </Routes>
           </div>
         </ThemeContext.Provider>
