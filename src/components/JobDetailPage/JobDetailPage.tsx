@@ -19,7 +19,7 @@ export const JobDetailPage: FC<JobDetailProps> = ({ filteredJobs }) => {
   );
 
   return (
-    <div className="job--detail--container">
+    <div className="job--description--page--container">
       <CompanyCard filteredJob={filteredJob} />
       <JobDescription filteredJob={filteredJob} />
     </div>

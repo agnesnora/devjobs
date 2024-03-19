@@ -1,10 +1,14 @@
-.job--detail--container {
+.job--description--page--container {
   margin: 1em;
+  position: relative;
+  top: -35px;
 }
-.job--detail--container .company--card--container {
+.job--description--page--container .company--card--container {
   background-color: #ffffff;
+  padding: 0 3em 2em 3em;
+  border-radius: 6px;
 }
-.job--detail--container .company--card--container .company--logo {
+.job--description--page--container .company--card--container .company--logo {
   width: 50px;
   height: 50px;
   margin: 0 auto;
@@ -12,5 +16,30 @@
   background-position: center;
   border-radius: 12px;
   position: relative;
-  top: -30px;
+  top: -25px;
+}
+.job--description--page--container .company--card--container .company--card--main h1 {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+.job--description--page--container .company--card--container .company--card--main a {
+  display: block;
+  text-decoration: none;
+  color: #6e8098;
+}
+.job--description--page--container .company--card--container .company--card--main .button--navlink {
+  display: inline-block;
+  padding: 1em 2em;
+  margin-top: 2em;
+  color: #5960e0;
+  font-weight: bold;
+  background-color: #eeeffc;
+  border-radius: 6px;
+}
+.job--description--page--container .company--card--container .company--card--main .button--navlink:hover {
+  background-color: #c5c9f4;
+}
+.job--description--page--container .job--detail--container {
+  background-color: #ffffff;
+  border-radius: 6px;
 }/*# sourceMappingURL=JobDetailPage.css.map */

@@ -51,13 +51,8 @@ export const Search: FC<SearchProps> = ({
     console.log(isPopUpOn);
   };
   return (
-    <div>
-      {/* <form
-        onSubmit={handleSearch}
-        className={`form--container form--container--${
-          themeContext?.theme === "light" ? "light" : "dark"
-        }`}
-      > */}{" "}
+    <>
+      {" "}
       {themeContext?.windowWidth ?? 1200 < themeContext?.screen.mobile ? (
         <form
           onSubmit={handleSearch}
@@ -106,9 +101,6 @@ export const Search: FC<SearchProps> = ({
           <button type="submit">Search</button>
         </div>
       )}
-      {/* </form> */}
-    </div>
-
-    // {/* </div> */}
+    </>
   );
 };

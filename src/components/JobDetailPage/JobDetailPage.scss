@@ -1,9 +1,13 @@
 @import "../../variables.scss";
 
-.job--detail--container {
+.job--description--page--container {
   margin: 1em;
+  position: relative;
+  top: -35px;
   .company--card--container {
     background-color: $pureWhite;
+    padding: 0 3em 2em 3em;
+    border-radius: 6px;
     .company--logo {
       width: 50px;
       height: 50px;
@@ -13,7 +17,34 @@
       border-radius: 12px;
 
       position: relative;
-      top: -30px;
+      top: -25px;
     }
+    .company--card--main {
+      h1 {
+        font-size: 1.25rem;
+        margin-top: 0;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: $darkGrey;
+      }
+      .button--navlink {
+        display: inline-block;
+        padding: 1em 2em;
+        margin-top: 2em;
+        color: $violet;
+        font-weight: bold;
+        background-color: $button2Bg;
+        border-radius: 6px;
+        &:hover {
+          background-color: $button2Hover;
+        }
+      }
+    }
+  }
+  .job--detail--container {
+    background-color: $pureWhite;
+    border-radius: 6px;
   }
 }

@@ -11,6 +11,7 @@ interface JobCardProps {
 export const JobCard: FC<JobCardProps> = ({ filteredJobs }) => {
   console.log(filteredJobs);
   const themeContext = useContext(ThemeContext);
+
   return (
     <>
       {filteredJobs.map((job) => (
