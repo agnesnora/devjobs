@@ -1,13 +1,22 @@
 @import "../../variables.scss";
-
+h1 {
+  font-size: 1.25rem;
+  color: $veryDarkBlue;
+}
+h4 {
+  font-size: 0.875rem;
+  color: $violet;
+}
 .job--description--page--container {
   margin: 1em;
   position: relative;
   top: -35px;
+
   .company--card--container {
     background-color: $pureWhite;
     padding: 0 3em 2em 3em;
     border-radius: 6px;
+    margin-bottom: 2em;
     .company--logo {
       width: 50px;
       height: 50px;
@@ -21,7 +30,7 @@
     }
     .company--card--main {
       h1 {
-        font-size: 1.25rem;
+        color: $veryDarkBlue;
         margin-top: 0;
       }
       a {
@@ -46,5 +55,38 @@
   .job--detail--container {
     background-color: $pureWhite;
     border-radius: 6px;
+    padding: 2em;
+    text-align: left;
+    .job--detail--header {
+      text-align: left;
+      .job--detail--header--top {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: $darkGrey;
+      }
+    }
+    // .apply--btn {
+    //   display: block;
+    //   text-decoration: none;
+    //   background-color: $violet;
+    //   text-align: center;
+    //   padding: 1em;
+    //   color: $pureWhite;
+    //   font-weight: bold;
+    //   font-size: 1rem;
+    //   border-radius: 6px;
+    // }
   }
+}
+.apply--btn {
+  display: block;
+  text-decoration: none;
+  background-color: $violet;
+  text-align: center;
+  padding: 1em;
+  color: $pureWhite;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
 }

@@ -1,3 +1,13 @@
+h1 {
+  font-size: 1.25rem;
+  color: #19202d;
+}
+
+h4 {
+  font-size: 0.875rem;
+  color: #5964e0;
+}
+
 .job--description--page--container {
   margin: 1em;
   position: relative;
@@ -7,6 +17,7 @@
   background-color: #ffffff;
   padding: 0 3em 2em 3em;
   border-radius: 6px;
+  margin-bottom: 2em;
 }
 .job--description--page--container .company--card--container .company--logo {
   width: 50px;
@@ -19,7 +30,7 @@
   top: -25px;
 }
 .job--description--page--container .company--card--container .company--card--main h1 {
-  font-size: 1.25rem;
+  color: #19202d;
   margin-top: 0;
 }
 .job--description--page--container .company--card--container .company--card--main a {
@@ -31,7 +42,7 @@
   display: inline-block;
   padding: 1em 2em;
   margin-top: 2em;
-  color: #5960e0;
+  color: #5964e0;
   font-weight: bold;
   background-color: #eeeffc;
   border-radius: 6px;
@@ -41,5 +52,28 @@
 }
 .job--description--page--container .job--detail--container {
   background-color: #ffffff;
+  border-radius: 6px;
+  padding: 2em;
+  text-align: left;
+}
+.job--description--page--container .job--detail--container .job--detail--header {
+  text-align: left;
+}
+.job--description--page--container .job--detail--container .job--detail--header .job--detail--header--top {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #6e8098;
+}
+
+.apply--btn {
+  display: block;
+  text-decoration: none;
+  background-color: #5964e0;
+  text-align: center;
+  padding: 1em;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
   border-radius: 6px;
 }/*# sourceMappingURL=JobDetailPage.css.map */

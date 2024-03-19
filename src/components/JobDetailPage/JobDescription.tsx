@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { JobsData } from "../../../data";
+import { Button } from "../Button/Button";
 import "./JobDetailPage.css";
 interface JobDescriptionProps {
   filteredJob?: JobsData;
@@ -25,17 +26,19 @@ export const JobDescription: FC<JobDescriptionProps> = ({ filteredJob }) => {
             <h4>{filteredJob.location}</h4>
           </div>
         </div>
-        <button>Apply now</button>
+        <Button className="apply--btn" path={filteredJob.website}>
+          Apply Now
+        </Button>
         <main className="job--detail--main">
           <p>{filteredJob.description}</p>
-          <h2>Requirements</h2>
+          <h1>Requirements</h1>
           <p>{filteredJob.requirements.content}</p>
           <ul>
             {filteredJob.requirements.items.map((requirement) => (
               <li>{requirement}</li>
             ))}
           </ul>
-          <h2>What you will do</h2>
+          <h1>What you will do</h1>
           <p>{filteredJob.role.content}</p>
           <ol>
             {filteredJob.role.items.map((role) => (
@@ -45,7 +48,9 @@ export const JobDescription: FC<JobDescriptionProps> = ({ filteredJob }) => {
         </main>
       </div>
       <footer>
-        <button>Apply now</button>
+        <Button className="apply--btn" path={filteredJob.website}>
+          Apply Now
+        </Button>
       </footer>
     </div>
   );
