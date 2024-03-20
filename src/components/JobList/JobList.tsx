@@ -3,6 +3,7 @@ import { JobsData } from "../../../data";
 import { JobCard } from "../JobCard.tsx/JobCard";
 import "./JobList.style.css";
 import { Search } from "../Search/Search";
+import { Button } from "../Button/Button";
 
 interface JobListProps {
   jobs: JobsData[];
@@ -25,6 +26,9 @@ export const JobList: FC<JobListProps> = ({
       <div className="joblist--container">
         {" "}
         <JobCard filteredJobs={filteredJobs} />
+        <Button path="#" className="load--more--btn">
+          Load more
+        </Button>
       </div>
     </div>
   );

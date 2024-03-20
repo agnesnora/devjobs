@@ -1,8 +1,10 @@
 @import "../../variables.scss";
-
+a {
+  text-decoration: none;
+}
 .jobcard--container {
   text-align: left;
-  margin: 2.5em 1em;
+  margin: 1em;
   padding: 1em;
   border-radius: 6px;
   .company--logo {

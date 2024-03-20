@@ -1,5 +1,18 @@
-.joblist--container {
+.desktop--joblist--container .joblist--container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1em;
+}
+.desktop--joblist--container .joblist--container .load--more--btn {
+  display: inline-block;
+  margin: 0 auto;
+  width: 60%;
+  text-decoration: none;
+  background-color: #5964e0;
+  text-align: center;
+  padding: 1em;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
 }/*# sourceMappingURL=JobList.style.css.map */
