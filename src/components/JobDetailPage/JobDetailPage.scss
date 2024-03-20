@@ -17,6 +17,7 @@ h4 {
     padding: 0 3em 2em 3em;
     border-radius: 6px;
     margin-bottom: 2em;
+    text-align: center;
     .company--logo {
       width: 50px;
       height: 50px;
@@ -29,16 +30,20 @@ h4 {
       top: -25px;
     }
     .company--card--main {
-      h1 {
-        color: $veryDarkBlue;
-        margin-top: 0;
+      .company--card--main--flex {
+        h1 {
+          color: $veryDarkBlue;
+          margin-top: 0;
+        }
+        a {
+          display: block;
+          text-decoration: none;
+          color: $darkGrey;
+        }
       }
-      a {
-        display: block;
-        text-decoration: none;
-        color: $darkGrey;
-      }
+
       .button--navlink {
+        text-decoration: none;
         display: inline-block;
         padding: 1em 2em;
         margin-top: 2em;
@@ -57,13 +62,28 @@ h4 {
     border-radius: 6px;
     padding: 2em;
     text-align: left;
-    .job--detail--header {
-      text-align: left;
-      .job--detail--header--top {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        color: $darkGrey;
+    .job--detail--header--flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .job--detail--header {
+        text-align: left;
+        .job--detail--header--top {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          color: $darkGrey;
+          p {
+            padding-right: 0.7em;
+            margin-bottom: 0;
+          }
+          span {
+            font-weight: bold;
+            font-size: 1.85rem;
+            padding-right: 0.7rem;
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
@@ -108,4 +128,129 @@ h4 {
   font-weight: bold;
   font-size: 1rem;
   border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .job--description--page--container {
+    // margin: 1em;
+    // position: relative;
+    // top: -35px;
+
+    .company--card--container {
+      // background-color: $pureWhite;
+      // padding: 0 3em 2em 3em;
+      // border-radius: 6px;
+      // margin-bottom: 2em;
+      width: 100%;
+      display: flex;
+      justify-content: left;
+      text-align: left;
+      padding: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+
+      .company--logo {
+        position: static;
+        background-size: 60%;
+        width: 140px;
+        height: 140px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 6px;
+
+        margin-left: 0;
+        margin-right: 2em;
+      }
+      .company--card--main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .company--card--main--flex {
+          text-align:left h1 {
+            font-size: 1.5rem;
+            // color: $veryDarkBlue;
+            // margin-top: 0;
+          }
+          a {
+            display: block;
+            text-decoration: none;
+            color: $darkGrey;
+          }
+        }
+
+        .button--navlink {
+          display: inline-block;
+          padding: 1em 2em;
+          margin-top: 0;
+          margin-right: 2em;
+          color: $violet;
+          font-weight: bold;
+          background-color: $button2Bg;
+          border-radius: 6px;
+          &:hover {
+            background-color: $button2Hover;
+          }
+        }
+      }
+    }
+    .job--detail--container {
+      background-color: $pureWhite;
+      border-radius: 6px;
+      padding: 2em;
+      text-align: left;
+      .job--detail--header {
+        text-align: left;
+        .job--detail--header--top {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          color: $darkGrey;
+          p {
+            padding-right: 0.7em;
+            margin-bottom: 0;
+          }
+          span {
+            font-weight: bold;
+            font-size: 1.85rem;
+            padding-right: 0.7rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    main {
+      h1 {
+        margin-bottom: 1em;
+      }
+      ul,
+      ol {
+        padding-left: 0;
+        margin: 2em auto 2em 1em;
+        li {
+          margin-bottom: 1em;
+          &::marker {
+            color: $violet;
+            font-weight: bold;
+            padding-right: 20px;
+          }
+        }
+      }
+      p,
+      li {
+        line-height: 1.625;
+        color: $darkGrey;
+      }
+
+      ol {
+        li {
+          list-style-position: outside;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
 }

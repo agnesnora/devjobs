@@ -16,13 +16,16 @@ export const JobList: FC<JobListProps> = ({
   setFilteredJobs,
 }) => {
   return (
-    <div className="joblist--container">
+    <div className="desktop--joblist--container">
       <Search
         jobs={jobs}
         filteredJobs={filteredJobs}
         setFilteredJobs={setFilteredJobs}
       />
-      <JobCard filteredJobs={filteredJobs} />
+      <div className="joblist--container">
+        {" "}
+        <JobCard filteredJobs={filteredJobs} />
+      </div>
     </div>
   );
 };

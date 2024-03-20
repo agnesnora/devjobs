@@ -1,12 +1,14 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import { JobsData } from "../../../data";
 import { Button } from "../Button/Button";
+import { ThemeContext } from "../../App";
 import "./JobDetailPage.css";
 interface JobDescriptionProps {
   filteredJob?: JobsData;
 }
 
 export const JobDescription: FC<JobDescriptionProps> = ({ filteredJob }) => {
+  const context = useContext(ThemeContext);
   if (!filteredJob) {
     return null;
   }
@@ -14,21 +16,32 @@ export const JobDescription: FC<JobDescriptionProps> = ({ filteredJob }) => {
   return (
     <div>
       <div className="job--detail--container">
-        <div className="job--detail--header">
-          <div className="job--detail--header--top">
-            <p>{filteredJob.postedAt}</p>
-            <span>.</span>
-            <p>{filteredJob.contract}</p>
-          </div>
-          <div className="job--detail--header--main">
-            <h1>{filteredJob.position}</h1>
+        <div className="job--detail--header--flex">
+          {" "}
+          <div className="job--detail--header">
+            <div className="job--detail--header--top">
+              <p>{filteredJob.postedAt}</p>
+              <span>.</span>
+              <p>{filteredJob.contract}</p>
+            </div>
+            <div className="job--detail--header--main">
+              <h1>{filteredJob.position}</h1>
 
-            <h4>{filteredJob.location}</h4>
+              <h4>{filteredJob.location}</h4>
+            </div>
           </div>
+          {context?.windowWidth > context?.screen.mobile ? (
+            <Button className="apply--btn" path={filteredJob.website}>
+              Apply Now
+            </Button>
+          ) : null}
         </div>
-        <Button className="apply--btn" path={filteredJob.website}>
-          Apply Now
-        </Button>
+
+        {context?.windowWidth < context?.screen.mobile ? (
+          <Button className="apply--btn" path={filteredJob.website}>
+            Apply Now
+          </Button>
+        ) : null}
         <main className="job--detail--main">
           <p>{filteredJob.description}</p>
           <h1>Requirements</h1>
