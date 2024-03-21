@@ -13,14 +13,25 @@ export const FilterPopUp: FC<FilterPopUpProps> = ({
 }) => {
   return (
     <div className="popUp">
-      {" "}
-      <input
-        type="text"
-        className="input--location"
-        onChange={handleLocationChange}
-        placeholder="Location"
-      />
-      <label>
+      <div className="icon--input--wrapper">
+        <img src="./assets/desktop/icon-location.svg" />{" "}
+        <input
+          type="text"
+          className="input--location"
+          onChange={handleLocationChange}
+          placeholder="Filter by location"
+        />
+      </div>
+      <div className="checkbox--label--wrapper">
+        <input
+          type="checkbox"
+          checked={fullTime}
+          onChange={handleFullTimeChange}
+          className="checkbox"
+        />{" "}
+        <label>Full Time Only</label>{" "}
+      </div>
+      {/* <label>
         <input
           type="checkbox"
           checked={fullTime}
@@ -28,7 +39,7 @@ export const FilterPopUp: FC<FilterPopUpProps> = ({
           className="checkbox"
         />
         Full Time
-      </label>
+      </label> */}
       <button type="submit">Search</button>
     </div>
   );
