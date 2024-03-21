@@ -59,8 +59,8 @@ export const Search: FC<SearchProps> = ({
   return (
     <>
       {(themeContext?.windowWidth ?? 768) < themeContext?.screen.mobile ? (
-        <div className={isPopUpOn ? "overlay" : ""}>
-          {" "}
+        <div className="container">
+          <div className={`overlay ${isPopUpOn ? "active" : ""}`}></div>{" "}
           <form
             onSubmit={handleSearch}
             className={`form--container
