@@ -11,7 +11,8 @@ import { MainLayout } from "./components/Layouts/MainLayout";
 type ThemeContextProps = {
   theme: string;
   setTheme: Dispatch<React.SetStateAction<string>>;
-
+  isPopUpOn: boolean;
+  setIsPopUpOn: Dispatch<React.SetStateAction<boolean>>;
   windowWidth: number;
   screen: { mobile: number; desktop: number };
 };
@@ -19,6 +20,7 @@ export const ThemeContext = createContext<null | ThemeContextProps>(null);
 const App: FC = () => {
   const [filteredJobs, setFilteredJobs] = useState<JobsData[]>(jobs);
   const [theme, setTheme] = useState("light");
+  const [isPopUpOn, setIsPopUpOn] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const screen: { mobile: number; desktop: number } = {
     mobile: 768,
@@ -38,7 +40,16 @@ const App: FC = () => {
   return (
     <>
       <BrowserRouter>
-        <ThemeContext.Provider value={{ theme, setTheme, windowWidth, screen }}>
+        <ThemeContext.Provider
+          value={{
+            theme,
+            setTheme,
+            windowWidth,
+            screen,
+            setIsPopUpOn,
+            isPopUpOn,
+          }}
+        >
           <div className={theme === "light" ? "light" : "dark"}>
             <Routes>
               <Route element={<MainLayout />}>

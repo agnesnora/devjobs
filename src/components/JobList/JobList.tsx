@@ -1,9 +1,11 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import { JobsData } from "../../../data";
 import { JobCard } from "../JobCard.tsx/JobCard";
 import "./JobList.style.css";
 import { Search } from "../Search/Search";
 import { Button } from "../Button/Button";
+import { FilterPopUp } from "../Search/FilterPopUp";
+import { ThemeContext } from "../../App";
 
 interface JobListProps {
   jobs: JobsData[];
@@ -16,6 +18,7 @@ export const JobList: FC<JobListProps> = ({
   jobs,
   setFilteredJobs,
 }) => {
+  const context = useContext(ThemeContext);
   return (
     <div className="desktop--joblist--container">
       <Search
@@ -23,6 +26,7 @@ export const JobList: FC<JobListProps> = ({
         filteredJobs={filteredJobs}
         setFilteredJobs={setFilteredJobs}
       />
+      {context?.isPopUpOn ? <FilterPopUp /> : null}
       <div className="joblist--container">
         {" "}
         <JobCard filteredJobs={filteredJobs} />

@@ -1,18 +1,46 @@
 .form--container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 1.5em;
   margin: 1.5em 1.5em 0 1.5em;
-  position: relative;
-  top: -55px;
+  position: fixed;
+  top: 70px;
+  left: 5%;
+  width: 80%;
   border-radius: 12px;
 }
 .form--container input {
   border: none;
+  width: 120px;
   height: 80px;
   color: #6e8098;
   background-color: transparent;
-  border-right: 1px #6e8098 solid;
+}
+.form--container .icon--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 80px;
+}
+.form--container .icon--flex button {
+  background-color: #5964e0;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  color: #ffffff;
+  border-radius: 6px;
+  width: 48px;
+  height: 48px;
+}
+.form--container .popUp {
+  position: fixed;
+  background-color: #ffffff;
+  padding: 2em;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 .form--container--light {
@@ -29,4 +57,28 @@
 
 ::placeholder {
   color: #6e8098;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+@media (min-width: 789px) {
+  .form--container label {
+    display: inline;
+    vertical-align: middle;
+  }
+  .form--container label .checkbox {
+    width: 20px;
+    display: inline;
+  }
+  .form--container input {
+    border-right: 1px #6e8098 solid;
+  }
 }/*# sourceMappingURL=Search.style.css.map */

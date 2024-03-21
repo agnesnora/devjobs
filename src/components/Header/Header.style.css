@@ -11,4 +11,13 @@ header {
 header img {
   width: 115px;
   height: 32px;
+}
+
+@media (min-width: 769px) {
+  header {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 0;
+  }
 }/*# sourceMappingURL=Header.style.css.map */
