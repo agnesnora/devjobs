@@ -15,7 +15,11 @@ export const JobDescription: FC<JobDescriptionProps> = ({ filteredJob }) => {
 
   return (
     <div>
-      <div className="job--detail--container">
+      <div
+        className={`job--detail--container job--detail--container--${
+          context?.theme === "light" ? "light" : "dark"
+        }`}
+      >
         <div className="job--detail--header--flex">
           {" "}
           <div className="job--detail--header">

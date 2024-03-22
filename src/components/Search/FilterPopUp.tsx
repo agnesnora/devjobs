@@ -1,5 +1,6 @@
-import { FC, ChangeEvent } from "react";
+import { FC, ChangeEvent, useContext } from "react";
 import "./Search.style.scss";
+import { ThemeContext } from "../../App";
 interface FilterPopUpProps {
   handleLocationChange: (event: ChangeEvent<HTMLInputElement>) => void;
   handleFullTimeChange: () => void;
@@ -11,8 +12,15 @@ export const FilterPopUp: FC<FilterPopUpProps> = ({
   handleFullTimeChange,
   fullTime,
 }) => {
+  const themeContext = useContext(ThemeContext);
   return (
-    <div className="popUp">
+    <div
+      className="popUp"
+      style={{
+        backgroundColor: themeContext?.theme === "dark" ? "#19202D" : "#fff",
+      }}
+      //   className={`popUp--${themeContext?.theme === "light" ? "light" : "dark"}`}
+    >
       <div className="icon--input--wrapper">
         <img src="./assets/desktop/icon-location.svg" />{" "}
         <input
@@ -29,7 +37,13 @@ export const FilterPopUp: FC<FilterPopUpProps> = ({
           onChange={handleFullTimeChange}
           className="checkbox"
         />{" "}
-        <label>Full Time Only</label>{" "}
+        <label
+          style={{
+            color: themeContext?.theme === "dark" ? "#979797" : "#19202D",
+          }}
+        >
+          Full Time Only
+        </label>{" "}
       </div>
       {/* <label>
         <input

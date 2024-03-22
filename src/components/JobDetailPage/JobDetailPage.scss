@@ -11,9 +11,31 @@ h4 {
   margin: 1em;
   position: relative;
   top: -35px;
-
-  .company--card--container {
+  .company--card--container--dark {
+    background-color: $veryDarkBlue;
+    .company--card--main {
+      .company--card--main--flex {
+        h1 {
+          color: $pureWhite;
+        }
+      }
+      .button--navlink {
+        background-color: #303642;
+        color: $pureWhite;
+      }
+    }
+  }
+  .company--card--container--light {
     background-color: $pureWhite;
+    .company--card--main {
+      .button--navlink {
+        color: $violet;
+
+        background-color: $button2Bg;
+      }
+    }
+  }
+  .company--card--container {
     padding: 0 3em 2em 3em;
     border-radius: 6px;
     margin-bottom: 2em;
@@ -32,7 +54,7 @@ h4 {
     .company--card--main {
       .company--card--main--flex {
         h1 {
-          color: $veryDarkBlue;
+          // color: $veryDarkBlue;
           margin-top: 0;
         }
         a {
@@ -47,9 +69,9 @@ h4 {
         display: inline-block;
         padding: 1em 2em;
         margin-top: 2em;
-        color: $violet;
+        // color: $violet;
         font-weight: bold;
-        background-color: $button2Bg;
+        // background-color: $button2Bg;
         border-radius: 6px;
         &:hover {
           background-color: $button2Hover;
@@ -57,8 +79,24 @@ h4 {
       }
     }
   }
-  .job--detail--container {
+  .job--detail--container--light {
     background-color: $pureWhite;
+  }
+  .job--detail--container--dark {
+    background-color: $veryDarkBlue;
+    .job--detail--header--main {
+      h1 {
+        color: $pureWhite;
+      }
+    }
+    main {
+      h1 {
+        color: $pureWhite;
+      }
+    }
+  }
+  .job--detail--container {
+    // background-color: $pureWhite;
     border-radius: 6px;
     padding: 2em;
     text-align: left;
@@ -135,6 +173,8 @@ h4 {
     // margin: 1em;
     // position: relative;
     // top: -35px;
+    max-width: 730px;
+    margin: 0 auto;
 
     .company--card--container {
       // background-color: $pureWhite;
@@ -187,9 +227,9 @@ h4 {
           padding: 1em 2em;
           margin-top: 0;
           margin-right: 2em;
-          color: $violet;
+          // color: $violet;
           font-weight: bold;
-          background-color: $button2Bg;
+          // background-color: $button2Bg;
           border-radius: 6px;
           &:hover {
             background-color: $button2Hover;
@@ -198,7 +238,7 @@ h4 {
       }
     }
     .job--detail--container {
-      background-color: $pureWhite;
+      // background-color: $pureWhite;
       border-radius: 6px;
       padding: 2em;
       text-align: left;
