@@ -2,6 +2,7 @@
 .desktop--joblist--container {
   max-width: 1280px;
   margin: 0 auto;
+  height: 100%;
   .joblist--container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

@@ -124,7 +124,7 @@ const jobs: JobsData[] = [
   },
   {
     id: 4,
-    company: "Office Lite",
+    company: "OfficeLite",
     logo: "./assets/logos/officelite.svg",
     logoBackground: "hsl(227, 62%, 48%)",
     position: "Senior Application Engineer",

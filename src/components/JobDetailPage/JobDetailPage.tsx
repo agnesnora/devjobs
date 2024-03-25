@@ -1,8 +1,10 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { JobsData } from "../../../data";
 import { CompanyCard } from "./CompanyCard";
 import { JobDescription } from "./JobDescription";
+import { Button } from "../Button/Button";
+import { ThemeContext } from "../../App";
 
 interface RouteParams {
   id: string;
@@ -13,15 +15,25 @@ interface JobDetailProps {
 }
 
 export const JobDetailPage: FC<JobDetailProps> = ({ filteredJobs }) => {
+  const theme = useContext(ThemeContext);
   const params = useParams<RouteParams>();
   const filteredJob = filteredJobs.find(
     (job) => job.id.toString() === params.id
   );
 
   return (
-    <div className="job--description--page--container">
-      <CompanyCard filteredJob={filteredJob} />
-      <JobDescription filteredJob={filteredJob} />
+    <div>
+      <div className="job--description--page--container">
+        <CompanyCard filteredJob={filteredJob} />
+        <JobDescription filteredJob={filteredJob} />
+      </div>
+      <footer
+        className={theme?.theme === "light" ? "footer--light" : "footer--dark"}
+      >
+        <Button className="apply--btn" path={"#"}>
+          Apply Now
+        </Button>
+      </footer>
     </div>
   );
 };

@@ -134,6 +134,19 @@ h4 {
   padding-left: 10px;
 }
 
+footer {
+  width: 100%;
+  padding: 2em;
+}
+
+.footer--light {
+  background-color: #ffffff;
+}
+
+.footer--dark {
+  background-color: #19202d;
+}
+
 .apply--btn {
   display: block;
   text-decoration: none;

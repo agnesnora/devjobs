@@ -11,6 +11,7 @@ h4 {
   margin: 1em;
   position: relative;
   top: -35px;
+
   .company--card--container--dark {
     background-color: $veryDarkBlue;
     .company--card--main {
@@ -156,6 +157,20 @@ h4 {
     }
   }
 }
+footer {
+  width: 100%;
+
+  padding: 2em;
+}
+
+.footer--light {
+  background-color: $pureWhite;
+}
+
+.footer--dark {
+  background-color: $veryDarkBlue;
+}
+
 .apply--btn {
   display: block;
   text-decoration: none;
