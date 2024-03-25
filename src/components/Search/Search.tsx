@@ -103,19 +103,42 @@ export const Search: FC<SearchProps> = ({
               themeContext?.theme === "light" ? "light" : "dark"
             }`}
           >
-            <input
-              type="text"
-              className="input--title"
-              onChange={handleTitleChange}
-              placeholder="Job title"
-            />
-            <input
-              type="text"
-              className="input--location"
-              onChange={handleLocationChange}
-              placeholder="Location"
-            />
-            <label>
+            <div className="icon--input--wrapper">
+              <img src="./assets/desktop/icon-search.svg" />{" "}
+              <input
+                type="text"
+                className="input--title"
+                onChange={handleTitleChange}
+                placeholder="Filter by title..."
+              />
+            </div>
+            <div className="icon--input--wrapper">
+              <img src="./assets/desktop/icon-location.svg" />{" "}
+              <input
+                type="text"
+                className="input--location"
+                onChange={handleLocationChange}
+                placeholder="Filter by location..."
+              />
+            </div>
+
+            <div className="checkbox--label--wrapper">
+              <input
+                type="checkbox"
+                checked={fullTime}
+                onChange={handleFullTimeChange}
+                className="checkbox"
+              />{" "}
+              <label
+                style={{
+                  color: themeContext?.theme === "dark" ? "#979797" : "#19202D",
+                }}
+              >
+                Full Time Only
+              </label>{" "}
+            </div>
+
+            {/* <label>
               <input
                 type="checkbox"
                 checked={fullTime}
@@ -123,7 +146,7 @@ export const Search: FC<SearchProps> = ({
                 className="checkbox"
               />
               Full Time
-            </label>
+            </label> */}
             <button type="submit">Search</button>
           </form>
         </>

@@ -132,17 +132,34 @@
 // }
 @media (min-width: 789px) {
   .form--container {
-    label {
-      display: inline;
-      vertical-align: middle;
-      .checkbox {
-        width: 20px;
-        display: inline;
+    display: flex;
+    justify-content: left;
+    padding-left: 0;
+
+    .icon--input--wrapper {
+      display: flex;
+      align-items: center;
+      padding-left: 1em;
+      input {
+        border-right: 1px $grey solid;
+        text-align: left;
+        min-width: 200px;
+        padding-left: 1em;
       }
     }
-
-    input {
-      border-right: 1px $darkGrey solid;
+    .checkbox--label--wrapper {
+      padding-left: 1em;
+      display: flex;
+      align-items: center;
+      .checkbox {
+        width: 20px;
+        height: 20px;
+        display: inline;
+      }
+      label {
+        padding: 0.7em;
+        font-weight: bold;
+      }
     }
   }
 }
