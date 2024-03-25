@@ -12,6 +12,16 @@ header {
     width: 115px;
     height: 32px;
   }
+  .switch--wrapper {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 @media (min-width: 769px) {
   header {

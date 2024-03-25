@@ -54,7 +54,7 @@ export const Search: FC<SearchProps> = ({
   };
   const handleFilter = () => {
     setIsPopUpOn(true);
-
+    console.log(themeContext?.isPopUpOn);
     // setIsSearchOnTop(false);
   };
   return (
