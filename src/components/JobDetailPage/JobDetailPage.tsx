@@ -30,7 +30,7 @@ export const JobDetailPage: FC<JobDetailProps> = ({ filteredJobs }) => {
       <footer
         className={theme?.theme === "light" ? "footer--light" : "footer--dark"}
       >
-        {(theme?.windowWidth ?? 768) < theme?.screen.mobile ? (
+        {(theme?.windowWidth ?? 768) < 768 ? (
           <Button className="apply--btn" path={"#"}>
             Apply Now
           </Button>

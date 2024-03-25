@@ -59,7 +59,7 @@ export const Search: FC<SearchProps> = ({
   };
   return (
     <>
-      {(themeContext?.windowWidth ?? 768) < themeContext?.screen.mobile ? (
+      {(themeContext?.windowWidth ?? 769) < 768 ? (
         <div className="container">
           <div className={`overlay ${isPopUpOn ? "active" : ""}`}></div>{" "}
           <form

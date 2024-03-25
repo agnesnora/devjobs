@@ -6,7 +6,7 @@
 }
 .desktop--joblist--container .joblist--container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 1em;
   margin-top: 30px;
 }
@@ -24,8 +24,8 @@
   border-radius: 6px;
 }
 
-@media (min-width: 789px) {
+@media (min-width: 769px) {
   .desktop--joblist--container .load--more--btn {
     width: 20%;
   }
-}/*# sourceMappingURL=JobList.style.css.map */
+} /*# sourceMappingURL=JobList.style.css.map */

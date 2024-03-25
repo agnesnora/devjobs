@@ -1,4 +1,4 @@
-import { FC, useContext } from "react";
+import { FC } from "react";
 import { JobsData } from "../../../data";
 import { JobCard } from "../JobCard.tsx/JobCard";
 import "./JobList.style.css";

@@ -14,7 +14,6 @@ type ThemeContextProps = {
   isPopUpOn: boolean;
   setIsPopUpOn: Dispatch<React.SetStateAction<boolean>>;
   windowWidth: number;
-  screen: { mobile: number; desktop: number };
 };
 export const ThemeContext = createContext<null | ThemeContextProps>(null);
 const App: FC = () => {
@@ -22,10 +21,6 @@ const App: FC = () => {
   const [theme, setTheme] = useState("light");
   const [isPopUpOn, setIsPopUpOn] = useState<boolean>(false);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-  const screen: { mobile: number; desktop: number } = {
-    mobile: 768,
-    desktop: 1240,
-  };
 
   useEffect(() => {
     const updateWindowWidth = () => {
@@ -46,7 +41,7 @@ const App: FC = () => {
               theme,
               setTheme,
               windowWidth,
-              screen,
+
               setIsPopUpOn,
               isPopUpOn,
             }}

@@ -6,17 +6,16 @@
 
 #root,
 body {
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
 
   // text-align: center;
   font-family: $font;
 }
-.dark,
-.light {
-  // height: 100vh;
-}
+// .dark,
+// .light {
+//   // height: 100vh;
+// }
 .dark {
   background-color: $midnight;
 }

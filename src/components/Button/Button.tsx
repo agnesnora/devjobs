@@ -4,21 +4,10 @@ interface ButtonProps {
   children: ReactNode;
   path: string;
   className: string;
-  setMessage?: React.Dispatch<React.SetStateAction<boolean>>;
 }
-export const Button: FC<ButtonProps> = ({
-  children,
-  path,
-  className,
-  setMessage,
-}) => {
+export const Button: FC<ButtonProps> = ({ children, path, className }) => {
   return (
-    <NavLink
-      className={className}
-      to={path}
-      target="_blank"
-      onClick={setMessage}
-    >
+    <NavLink className={className} to={path} target="_blank">
       {children}
     </NavLink>
   );
