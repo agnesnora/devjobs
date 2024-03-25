@@ -35,18 +35,24 @@ export const JobDescription: FC<JobDescriptionProps> = ({ filteredJob }) => {
                 <h4>{filteredJob.location}</h4>
               </div>
             </div>
-            {context?.windowWidth > context?.screen.mobile ? (
+            {/* {context?.windowWidth > 768 ? (
               <Button className="apply--btn" path={filteredJob.website}>
                 Apply Now
               </Button>
-            ) : null}
+              
+            ) : null} */}
+            {context?.windowWidth && context?.windowWidth > 768 && (
+              <Button className="apply--btn" path={filteredJob.website}>
+                Apply Now
+              </Button>
+            )}
           </div>
 
-          {context?.windowWidth < context?.screen.mobile ? (
+          {context?.windowWidth && context?.windowWidth < 768 && (
             <Button className="apply--btn" path={filteredJob.website}>
               Apply Now
             </Button>
-          ) : null}
+          )}
           <main className="job--detail--main">
             <p>{filteredJob.description}</p>
             <h1>Requirements</h1>
