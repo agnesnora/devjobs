@@ -50,10 +50,11 @@ export const Search: FC<SearchProps> = ({
     isPopUpOn ? setIsPopUpOn(false) : null;
     // setIsSearchOnTop(true); // Set the search component on top
     console.log(filteredJobs);
+    setPositionQuery("");
   };
   const handleFilter = () => {
     setIsPopUpOn(true);
-    console.log(themeContext?.isPopUpOn);
+
     // setIsSearchOnTop(false);
   };
   return (

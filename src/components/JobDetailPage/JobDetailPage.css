@@ -138,13 +138,24 @@ footer {
   width: 100%;
   padding: 2em;
 }
+footer p {
+  color: #9daec2;
+  margin-top: 0.5em;
+}
+footer h1 {
+  margin-bottom: 0;
+}
 
 .footer--light {
   background-color: #ffffff;
+  color: #19202d;
 }
 
 .footer--dark {
   background-color: #19202d;
+}
+.footer--dark h1 {
+  color: #ffffff;
 }
 
 .apply--btn {
@@ -262,5 +273,13 @@ footer {
   .job--description--page--container main ol li {
     list-style-position: outside;
     padding-left: 10px;
+  }
+  footer .footer--flex--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .footer--flex--wrapper button {
+    display: block;
   }
 }/*# sourceMappingURL=JobDetailPage.css.map */

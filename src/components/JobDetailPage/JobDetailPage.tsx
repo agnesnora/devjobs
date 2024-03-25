@@ -30,9 +30,23 @@ export const JobDetailPage: FC<JobDetailProps> = ({ filteredJobs }) => {
       <footer
         className={theme?.theme === "light" ? "footer--light" : "footer--dark"}
       >
-        <Button className="apply--btn" path={"#"}>
-          Apply Now
-        </Button>
+        {(theme?.windowWidth ?? 768) < theme?.screen.mobile ? (
+          <Button className="apply--btn" path={"#"}>
+            Apply Now
+          </Button>
+        ) : (
+          <div className="footer--flex--wrapper">
+            {" "}
+            <div>
+              {" "}
+              <h1>{filteredJob?.position}</h1>
+              <p>{filteredJob?.company}</p>
+            </div>{" "}
+            <Button className="apply--btn" path={"#"}>
+              Apply Now
+            </Button>
+          </div>
+        )}
       </footer>
     </div>
   );
