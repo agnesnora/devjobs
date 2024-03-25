@@ -1,7 +1,8 @@
 .desktop--joblist--container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 1em auto;
   height: 100%;
+  padding-bottom: 4em;
 }
 .desktop--joblist--container .joblist--container {
   display: grid;
@@ -9,9 +10,9 @@
   gap: 1em;
   margin-top: 30px;
 }
-.desktop--joblist--container .joblist--container .load--more--btn {
-  display: inline-block;
-  margin: 0 auto;
+.desktop--joblist--container .load--more--btn {
+  display: block;
+  margin: 3em auto;
   width: 60%;
   text-decoration: none;
   background-color: #5964e0;
@@ -21,4 +22,10 @@
   font-weight: bold;
   font-size: 1rem;
   border-radius: 6px;
+}
+
+@media (min-width: 789px) {
+  .desktop--joblist--container .load--more--btn {
+    width: 20%;
+  }
 }/*# sourceMappingURL=JobList.style.css.map */

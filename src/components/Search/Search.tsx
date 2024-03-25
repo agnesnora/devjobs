@@ -138,15 +138,6 @@ export const Search: FC<SearchProps> = ({
               </label>{" "}
             </div>
 
-            {/* <label>
-              <input
-                type="checkbox"
-                checked={fullTime}
-                onChange={handleFullTimeChange}
-                className="checkbox"
-              />
-              Full Time
-            </label> */}
             <button type="submit">Search</button>
           </form>
         </>

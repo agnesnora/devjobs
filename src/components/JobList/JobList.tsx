@@ -30,10 +30,10 @@ export const JobList: FC<JobListProps> = ({
       <div className="joblist--container">
         {" "}
         <JobCard filteredJobs={filteredJobs} />
-        <Button path="#" className="load--more--btn">
-          Load more
-        </Button>
       </div>
+      <Button path="#" className="load--more--btn">
+        Load more
+      </Button>
     </div>
   );
 };

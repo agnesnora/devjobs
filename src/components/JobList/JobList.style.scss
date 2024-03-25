@@ -1,25 +1,34 @@
 @import "../../variables.scss";
 .desktop--joblist--container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 1em auto;
   height: 100%;
+  padding-bottom: 4em;
   .joblist--container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1em;
     margin-top: 30px;
+  }
+  .load--more--btn {
+    display: block;
+    margin: 3em auto;
+    width: 60%;
+
+    text-decoration: none;
+    background-color: $violet;
+    text-align: center;
+    padding: 1em;
+    color: $pureWhite;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+}
+@media (min-width: 789px) {
+  .desktop--joblist--container {
     .load--more--btn {
-      display: inline-block;
-      margin: 0 auto;
-      width: 60%;
-      text-decoration: none;
-      background-color: $violet;
-      text-align: center;
-      padding: 1em;
-      color: $pureWhite;
-      font-weight: bold;
-      font-size: 1rem;
-      border-radius: 6px;
+      width: 20%;
     }
   }
 }
