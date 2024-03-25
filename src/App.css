@@ -10,6 +10,11 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.dark,
+.light {
+  height: 100%;
+}
+
 .dark {
   background-color: #121721;
 }

@@ -39,18 +39,18 @@ const App: FC = () => {
   }, []);
   return (
     <>
-      <BrowserRouter>
-        <ThemeContext.Provider
-          value={{
-            theme,
-            setTheme,
-            windowWidth,
-            screen,
-            setIsPopUpOn,
-            isPopUpOn,
-          }}
-        >
-          <div className={theme === "light" ? "light" : "dark"}>
+      <div className={theme === "light" ? "light" : "dark"}>
+        <BrowserRouter>
+          <ThemeContext.Provider
+            value={{
+              theme,
+              setTheme,
+              windowWidth,
+              screen,
+              setIsPopUpOn,
+              isPopUpOn,
+            }}
+          >
             <Routes>
               <Route element={<MainLayout />}>
                 <Route
@@ -75,9 +75,9 @@ const App: FC = () => {
                 />
               </Route>
             </Routes>
-          </div>
-        </ThemeContext.Provider>
-      </BrowserRouter>
+          </ThemeContext.Provider>
+        </BrowserRouter>
+      </div>
     </>
   );
 };

@@ -12,7 +12,7 @@
   border: none;
   width: 120px;
   height: 80px;
-  color: #f4f6f8;
+  color: #9daec2;
   background-color: transparent;
 }
 .form--container .icon--flex {
@@ -90,11 +90,11 @@
 }
 
 ::-moz-placeholder {
-  color: #f4f6f8;
+  color: #9daec2;
 }
 
 ::placeholder {
-  color: #f4f6f8;
+  color: #9daec2;
 }
 
 .container {
