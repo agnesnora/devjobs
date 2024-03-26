@@ -31,7 +31,7 @@ export const JobDetailPage: FC<JobDetailProps> = ({ filteredJobs }) => {
         className={theme?.theme === "light" ? "footer--light" : "footer--dark"}
       >
         {(theme?.windowWidth ?? 768) < 768 ? (
-          <Button className="apply--btn" path={"#"}>
+          <Button className="apply--btn" path={filteredJob?.apply || ""}>
             Apply Now
           </Button>
         ) : (
