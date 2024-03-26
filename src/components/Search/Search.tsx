@@ -15,7 +15,7 @@ interface SearchProps {
 
 export const Search: FC<SearchProps> = ({
   jobs,
-  filteredJobs,
+
   setFilteredJobs,
 }) => {
   const [positionQuery, setPositionQuery] = useState<string>("");
@@ -48,14 +48,11 @@ export const Search: FC<SearchProps> = ({
     );
     setFilteredJobs(filteredData);
     isPopUpOn ? setIsPopUpOn(false) : null;
-    // setIsSearchOnTop(true); // Set the search component on top
-    console.log(filteredJobs);
+
     setPositionQuery("");
   };
   const handleFilter = () => {
     setIsPopUpOn(true);
-    console.log(themeContext?.isPopUpOn);
-    // setIsSearchOnTop(false);
   };
   return (
     <>

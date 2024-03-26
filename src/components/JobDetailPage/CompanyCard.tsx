@@ -13,7 +13,6 @@ export const CompanyCard: FC<CompanyCardProps> = ({ filteredJob }) => {
   if (!filteredJob) {
     return null;
   }
-  console.log(filteredJob.company.toLowerCase());
 
   return (
     <div
@@ -41,10 +40,6 @@ export const CompanyCard: FC<CompanyCardProps> = ({ filteredJob }) => {
         <Button className="button--navlink" path={filteredJob.website}>
           Company Site
         </Button>
-        {/* <NavLink className="button--navlink" to={filteredJob.website}>
-          {" "}
-          Company Site
-        </NavLink> */}
       </div>
     </div>
   );

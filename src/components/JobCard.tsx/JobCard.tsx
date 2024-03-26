@@ -9,7 +9,6 @@ interface JobCardProps {
 }
 
 export const JobCard: FC<JobCardProps> = ({ filteredJobs }) => {
-  console.log(filteredJobs);
   const themeContext = useContext(ThemeContext);
 
   return (
@@ -22,7 +21,6 @@ export const JobCard: FC<JobCardProps> = ({ filteredJobs }) => {
               themeContext?.theme === "light" ? "light" : "dark"
             }`}
           >
-            {/* <img src={job.logo} className="company--logo" /> */}
             <div
               className="company--logo"
               style={{

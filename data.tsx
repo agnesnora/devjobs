@@ -30,8 +30,8 @@ const jobs: JobsData[] = [
     postedAt: "5h ago",
     contract: "Full Time",
     location: "United Kingdom",
-    website: "https://example.com/scoot",
-    apply: "https://example.com/scoot/apply",
+    website: "https://en.wikipedia.org/wiki/Scoot",
+    apply: "https://en.wikipedia.org/wiki/Scoot",
     description:
       "Scoot is looking for a Senior Software Engineer passionate about building approachable, innovative and user-first experiences to join our small but growing Engineering team. You will be responsible for building and maintaining front end functionality across all of Scoot’s applications, fostering a growing team of software engineers, and helping drive and maintain best software patterns and practices in our codebase.",
     requirements: {
@@ -64,8 +64,8 @@ const jobs: JobsData[] = [
     postedAt: "20h ago",
     contract: "Part Time",
     location: "United States",
-    website: "https://example.com/blogr",
-    apply: "https://example.com/blogr/apply",
+    website: "https://my-blogr-landing-page.netlify.app/",
+    apply: "https://my-blogr-landing-page.netlify.app/",
     description:
       "Blogr is looking for a part-time developer to join our six-strong team of full-stack engineers. Our core development values are strong, static typing and correctness, rigorous automation (in both testing and infrastructure) and everyone having a say.",
     requirements: {
@@ -98,8 +98,8 @@ const jobs: JobsData[] = [
     postedAt: "1d ago",
     contract: "Part Time",
     location: "Russia",
-    website: "https://example.com/vector",
-    apply: "https://example.com/vector/apply",
+    website: "https://www.vector.com/int/en/",
+    apply: "https://www.vector.com/int/en/",
     description:
       "We are looking for a Mid-level Back End Engineer to join our growing software engineering organization. The right person will help move our platform to the next level. You’ll be working as part of a skilled, collaborative team to jointly design and implement high visibility applications.",
     requirements: {
@@ -131,8 +131,10 @@ const jobs: JobsData[] = [
     postedAt: "2d ago",
     contract: "Full Time",
     location: "Japan",
-    website: "https://example.com/officelite",
-    apply: "https://example.com/officelite/apply",
+    website:
+      "https://play.google.com/store/apps/details?id=cn.wps.moffice_i18n&hl=hu&gl=US&pli=1",
+    apply:
+      "https://play.google.com/store/apps/details?id=cn.wps.moffice_i18n&hl=hu&gl=US&pli=1",
     description:
       "Office Lite is seeking a talented and enthusiastic Senior Application Engineer whose primary responsibility is software architecture and development for Office Lite systems. Additional responsibilities include participation in project time/task estimation, code and architecture reviews, providing support for junior developers, documentation of system architecture and a supporting role for all phases of the development life-cycle (project definition, process mapping, architecture, coding, acceptance testing, installation, turnover to support, etc.).",
     requirements: {
@@ -166,8 +168,8 @@ const jobs: JobsData[] = [
     postedAt: "2d ago",
     contract: "Part Time",
     location: "Japan",
-    website: "https://example.com/pod",
-    apply: "https://example.com/pod/apply",
+    website: "https://www.pods.com/",
+    apply: "https://www.pods.com/",
     description:
       "Join our dynamic team in developing Pod’s core products and supporting infrastructure. Our software is currently written in Java, VB.Net, React Native, React JS and others. You will help lead new initiatives to build and improve the testing, staging and deployment solutions. You will interact with all development teams, development leadership and our hosting/IT staff to define requirements and goals for the Dev Ops Platform.",
     requirements: {
@@ -205,8 +207,8 @@ const jobs: JobsData[] = [
     postedAt: "4d ago",
     contract: "Part Time",
     location: "Germany",
-    website: "https://example.com/creative",
-    apply: "https://example.com/creative/apply",
+    website: "https://en.creative.com/",
+    apply: "https://en.creative.com/",
     description:
       "Creative is seeking a Desktop Support Manager responsible for managing and leading a high-performance team in a dynamic environment. The ideal candidate should have management experience, a strong technical skillset, exceptional client service skills and enjoy mentoring a team.",
     requirements: {
@@ -242,8 +244,8 @@ const jobs: JobsData[] = [
     postedAt: "1w ago",
     contract: "Full Time",
     location: "United States",
-    website: "https://example.com/pomodoro",
-    apply: "https://example.com/pomodoro/apply",
+    website: "https://www.pomodoro.com/",
+    apply: "https://www.pomodoro.com/",
     description:
       "We are looking for thoughtful, well-rounded iOS engineer to join our team. We’re looking for someone to help build out the foundation of the app and infrastructure. If you are interested in taking part in building an application that millions of people use every day to increase their productivity, this is the perfect opportunity. You will play an important part in our mobile engineering practice, implementing new features, improving performance, and building beautiful user interfaces.",
     requirements: {
@@ -276,8 +278,8 @@ const jobs: JobsData[] = [
     postedAt: "1w ago",
     contract: "Full Time",
     location: "United Kingdom",
-    website: "https://example.com/maker",
-    apply: "https://example.com/maker/apply",
+    website: "http://www.makers.com/",
+    apply: "http://www.makers.com/",
     description:
       "We are seeking an experienced EJB Developer who will join our fast-growing engineering team, working on mission-critical applications. Searching for a Senior Java Developer who thrives on working with enterprises in multiple industries with unique business challenges requiring sophisticated solution design.",
     requirements: {
@@ -310,8 +312,8 @@ const jobs: JobsData[] = [
     postedAt: "1w ago",
     contract: "Part Time",
     location: "Singapore",
-    website: "https://example.com/coffeeroasters",
-    apply: "https://example.com/coffeeroasters/apply",
+    website: "https://coffeeroasters.com/",
+    apply: "https://coffeeroasters.com/",
     description:
       "We’re looking for an experienced Frontend Developer with an eye for Product Design along with a honed set of coding skills and who shares our values around technology. Most importantly, we’d like someone who is collaborative and can work closely with the rest of our team shaping product.",
     requirements: {
@@ -344,8 +346,8 @@ const jobs: JobsData[] = [
     postedAt: "2w ago",
     contract: "Freelance",
     location: "United States",
-    website: "https://example.com/mastercraft",
-    apply: "https://example.com/mastercraft/apply",
+    website: "https://www.mastercraft.com/",
+    apply: "https://www.mastercraft.com/",
     description:
       "Mastercraft is looking for a UX/UI Designer to turn our software into easy-to-use products for our clients. Responsibilities include gathering user requirements, designing graphic elements and building software component",
     requirements: {
@@ -380,8 +382,8 @@ const jobs: JobsData[] = [
     postedAt: "1mo ago",
     contract: "Part Time",
     location: "New Zealand",
-    website: "https://example.com/crowdfund",
-    apply: "https://example.com/crowdfund/apply",
+    website: "https://www.crowdfunding.com/",
+    apply: "https://www.crowdfunding.com/",
     description:
       "Crowdfund is currently expanding and working on revolutionizing the world of raising funds for any project – creative, entrepreneurial or cause-related. Come and join us in this growth! We are looking for an exceptionally talented Fullstack Developer who will become an integral part of the company’s exciting new chapter.",
     requirements: {
@@ -416,8 +418,8 @@ const jobs: JobsData[] = [
     postedAt: "1mo ago",
     contract: "Part Time",
     location: "United Kingdom",
-    website: "https://example.com/typemaster",
-    apply: "https://example.com/typemaster/apply",
+    website: "https://www.typingmaster.com/",
+    apply: "https://www.typingmaster.com/",
     description:
       "We are looking for a talented tech lead to join a team that creates large-scale, highly-performant web applications. This team creates highly visible and responsive user interfaces used by millions of people.",
     requirements: {
@@ -451,8 +453,8 @@ const jobs: JobsData[] = [
     postedAt: "1mo ago",
     contract: "Full Time",
     location: "New Zealand",
-    website: "https://example.com/crowdfund",
-    apply: "https://example.com/crowdfund/apply",
+    website: "https://www.crowdfunding.com/",
+    apply: "https://www.crowdfunding.com/",
     description:
       "We’re hiring a Front-end Developer to help create the front-end experience for Crowdfund’s management interface. As our ideal candidate, you’re an adept user of the front-end stack (React, Yarn, webpack, Babel, SCSS, JSX, GraphQL) and an avid learner of new frameworks. You enjoy building excellent user experiences as well as reusable components that other developers can use to solve similar problems. You love open-source and being part of a thriving developer community and understand that strong businesses enable great enduring communities.",
     requirements: {
@@ -486,8 +488,8 @@ const jobs: JobsData[] = [
     postedAt: "1mo ago",
     contract: "Full Time",
     location: "Singapore",
-    website: "https://example.com/coffeeroasters",
-    apply: "https://example.com/coffeeroasters/apply",
+    website: "https://coffeeroasters.com/",
+    apply: "https://coffeeroasters.com/",
     description:
       "We’re looking for a Junior Full-Stack Developer to join our Product and Engineering team. This is an exciting opportunity to work on building our core web application.",
     requirements: {
@@ -521,8 +523,8 @@ const jobs: JobsData[] = [
     postedAt: "1mo ago",
     contract: "Full Time",
     location: "United States",
-    website: "https://example.com/blogr",
-    apply: "https://example.com/blogr/apply",
+    website: "https://my-blogr-landing-page.netlify.app/",
+    apply: "https://my-blogr-landing-page.netlify.app/",
     description:
       "We’re looking for a Frontend Developer who values user experience, performance and accessibility. Through our enduring interest in how people use our products, Blogr embraces a model of software development that is iterative and gradual. Like high-performance engines, our products are built through a process of continuous refinement (usually on two week release cycles). We’re looking for someone who is comfortable embodying this approach.",
     requirements: {

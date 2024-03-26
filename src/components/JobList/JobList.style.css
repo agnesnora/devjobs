@@ -14,6 +14,7 @@
   display: block;
   margin: 3em auto;
   width: 60%;
+  border: none;
   text-decoration: none;
   background-color: #5964e0;
   text-align: center;
@@ -28,4 +29,4 @@
   .desktop--joblist--container .load--more--btn {
     width: 20%;
   }
-} /*# sourceMappingURL=JobList.style.css.map */
+}/*# sourceMappingURL=JobList.style.css.map */

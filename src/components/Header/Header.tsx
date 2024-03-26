@@ -5,7 +5,7 @@ import Switch from "react-switch";
 
 export const Header: FC = () => {
   const themeContext = useContext(ThemeContext);
-  console.log("context", themeContext?.theme);
+
   const toggleTheme = () => {
     themeContext?.setTheme(themeContext?.theme === "light" ? "dark" : "light");
   };
