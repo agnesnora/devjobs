@@ -42,7 +42,7 @@ export const JobDetailPage: FC<JobDetailProps> = ({ filteredJobs }) => {
               <h1>{filteredJob?.position}</h1>
               <p>{filteredJob?.company}</p>
             </div>{" "}
-            <Button className="apply--btn" path={"#"}>
+            <Button className="apply--btn" path={filteredJob?.apply || ""}>
               Apply Now
             </Button>
           </div>
