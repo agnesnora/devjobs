@@ -18,6 +18,9 @@ export const JobList: FC<JobListProps> = ({
   const [message, setMessage] = useState<boolean>(false);
   const handleClick = () => {
     setMessage(true);
+    setTimeout(() => {
+      setMessage(false);
+    }, 3000);
   };
   return (
     <div className="desktop--joblist--container">
@@ -31,14 +34,18 @@ export const JobList: FC<JobListProps> = ({
         {" "}
         <JobCard filteredJobs={filteredJobs} />
       </div>
-      <button className="load--more--btn" onClick={handleClick}>
+      {/* <button className="load--more--btn" onClick={handleClick}>
         Load more
-      </button>
-      {message ? (
+      </button> */}
+      {!message ? (
+        <button className="load--more--btn" onClick={handleClick}>
+          Load more
+        </button>
+      ) : (
         <h1 style={{ textAlign: "center", color: "#9daec2" }}>
           Currently there are no more open positions
         </h1>
-      ) : null}
+      )}
     </div>
   );
 };
