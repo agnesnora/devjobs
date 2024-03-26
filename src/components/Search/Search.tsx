@@ -22,7 +22,6 @@ export const Search: FC<SearchProps> = ({
   const [locationQuery, setLocationQuery] = useState<string>("");
   const [fullTime, setFullTime] = useState<boolean>(false);
   const [isPopUpOn, setIsPopUpOn] = useState<boolean>(false);
-  // const [isSearchOnTop, setIsSearchOnTop] = useState<boolean>(false);
 
   const themeContext = useContext(ThemeContext);
 

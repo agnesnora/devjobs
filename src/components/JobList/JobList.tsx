@@ -34,9 +34,7 @@ export const JobList: FC<JobListProps> = ({
         {" "}
         <JobCard filteredJobs={filteredJobs} />
       </div>
-      {/* <button className="load--more--btn" onClick={handleClick}>
-        Load more
-      </button> */}
+
       {!message ? (
         <button className="load--more--btn" onClick={handleClick}>
           Load more

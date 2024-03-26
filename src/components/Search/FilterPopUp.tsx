@@ -19,7 +19,6 @@ export const FilterPopUp: FC<FilterPopUpProps> = ({
       style={{
         backgroundColor: themeContext?.theme === "dark" ? "#19202D" : "#fff",
       }}
-      //   className={`popUp--${themeContext?.theme === "light" ? "light" : "dark"}`}
     >
       <div className="icon--input--wrapper">
         <img src="./assets/desktop/icon-location.svg" />{" "}
@@ -45,15 +44,7 @@ export const FilterPopUp: FC<FilterPopUpProps> = ({
           Full Time Only
         </label>{" "}
       </div>
-      {/* <label>
-        <input
-          type="checkbox"
-          checked={fullTime}
-          onChange={handleFullTimeChange}
-          className="checkbox"
-        />
-        Full Time
-      </label> */}
+
       <button type="submit">Search</button>
     </div>
   );
